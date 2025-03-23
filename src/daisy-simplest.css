@@ -1,0 +1,3 @@
+/* Minimal daisy init if you want only their styles  */
+@import "tailwindcss";
+@plugin "daisyui";
