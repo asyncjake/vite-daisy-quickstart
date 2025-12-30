@@ -1,0 +1,49 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "lib": [
+      "esnext"
+    ],
+    "types": [
+      "node",
+      "express"
+    ],
+    // Top-down resolution for local files
+    //     i.e. import from @ instead of import from ../../../src/
+    "baseUrl": "src",
+    "paths": {
+      "@/*": [
+        "*"
+      ]
+    },
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true,
+    // Other Outputs
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    // Style Options
+    "strict": true,
+    "noUncheckedSideEffectImports": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
